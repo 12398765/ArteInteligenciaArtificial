@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(225, 232, 239);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.navbar-toggles {
+    background-color: white !important;
+}
+
+.IA {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.imgNosotros,
+.imgObj {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgImgPrincipal {
+    width: 200px;
+    height: 200px;
+    margin: auto
+}
+
+.contentNosotros,
+.contentObj {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.Contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 3px auto !important;
+    padding: 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.servicios {
+    width: 85%;
+    margin: 0 auto !important;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+.nav-item {}
+
+/*Carrousel*/
+.carousel__elemento {
+    text-align: center;
+}
+
+.carousel__elemento img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.carousel__contenedor {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    background-color: #DBE0E5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#flechaAnt,
+#flechaSig {
+    width: 50px;
+    height: 50px;
+    clip-path: circle(35%);
+}
+
+.carousel__siguiente {
+    right: -80px;
+}
+
+.carousel__anterior {
+    left: -80px;
+}
+
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #222;
+    opacity: 0.2;
+    border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: 0.5;
+}
+
+.carousel__indicadores .glider-dot.active {
+    opacity: 1;
+}
+
+.map {
+    width: 200px;
+    height: 200px;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: #222;
+}
+
+
+@media(max-width:767px) {
+
+    .imgNosotros,
+    .imgObj {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contentNosotros,
+    .contentObj {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:360px) {
+    .container-fluid {
+        padding: 0 !important;
+    }
+
+    .carousel__contenedor {
+        width: 90%;
+    }
+
+    .imgImgPrincipal {
+        width: 100px;
+        height: 100px;
+    }
+
+    .carousel__siguiente {
+        right: -20px;
+    }
+
+    .carousel__anterior {
+        left: -20px;
+    }
+}
